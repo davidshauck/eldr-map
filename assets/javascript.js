@@ -114,7 +114,7 @@ var geojson = [
     }
 ];
 var map = L.mapbox.map('map', 'mapbox.k8xv42t9')
-.setView([42.3467, -71.0972], 12);
+.setView([42.3467, -71.0972], 10);
 
 map.scrollWheelZoom.disable();
 
@@ -167,7 +167,7 @@ locations.eachLayer(function(locale) {
 
     // When a menu item is clicked, animate the map to center
     // its associated locale and open its popup.
-    map.setView(locale.getLatLng(), 12);
+    map.setView(locale.getLatLng(), 10);
     locale.openPopup();
     return false;
   };
